@@ -1,5 +1,5 @@
 var c = document.getElementById("desenho");
-
+if(c.getContext){
 var ctx = c.getContext("2d");
 //Posição inicial da linha.
 curva1();
@@ -71,8 +71,8 @@ var grd = ctx.createLinearGradient(150, 0, 750, 0);
 grd.addColorStop(0, "red");
 grd.addColorStop(1, "yellow");
 //Definição da cor do texto e das bordas das formas
-ctx.strokeStyle = "SeaGreen";
 //Definição da fonte do texto.
+ctx.strokeStyle = "green";
 ctx.font = "32px Times New Roman";
 //Definição do conteúdo e posição do texto.
 ctx.strokeText("Formas Geometricas", 480, 50)
@@ -89,4 +89,7 @@ img.src = "Imagem1.png";
 
 img.onload = function(){
 ctx.drawImage(img, 400, 350, 400, 200);};
+}
+}else{
+	alert("O conteúdo do site é incompativel");
 }
