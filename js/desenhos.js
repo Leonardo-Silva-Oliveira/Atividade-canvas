@@ -1,91 +1,42 @@
 var c = document.getElementById("desenho");
 
 var ctx = c.getContext("2d");
+//Posição inicial da linha.
+ctx.moveTo(200, 100);
+//Posição em que a linha irá.
+ctx.lineTo(100, 250);
 
-ctx.moveTo(615, 25);
+ctx.lineTo(300, 250);
 
-ctx.lineTo(600, 10);
+ctx.lineTo(200, 100);
+//Definição da cor do texto.
+ctx.fillStyle = "green";
 
-ctx.lineTo(300, 360);
+ctx.moveTo(500, 170);
+//Criação do circulo.
+ctx.arc(500, 170, 75, 0, 2 * Math.PI);
 
-ctx.lineTo(900, 360);
+ctx.moveTo(700, 100);
 
-ctx.lineTo(600, 25);
+ctx.lineTo(850, 100);
 
-ctx.lineTo(325, 350);
+ctx.lineTo(850, 250);
 
-ctx.lineTo(875, 350);
+ctx.lineTo(700, 250);
 
-ctx.lineTo(600, 40);
+ctx.moveTo(950, 150);
 
-ctx.lineTo(350, 340);
+ctx.lineTo(1100, 150);
 
-ctx.lineTo(850, 340);
+ctx.lineTo(1100, 250);
 
-ctx.lineTo(600, 55);
+ctx.lineTo(950, 250);
 
-ctx.lineTo(375, 330);
-
-ctx.lineTo(825, 330);
-
-ctx.lineTo(600, 70);
-
-ctx.lineTo(400, 320);
-
-ctx.lineTo(800, 320);
-
-ctx.lineTo(600, 85);
-
-ctx.lineTo(425, 310);
-
-ctx.lineTo(775, 310);
-
-ctx.lineTo(600, 100);
-
-ctx.lineTo(450, 300);
-
-ctx.lineTo(750, 300);
-
-ctx.lineTo(600, 115);
-
-ctx.lineTo(475, 290);
-
-ctx.lineTo(725, 290);
-
-ctx.lineTo(600, 130);
-
-ctx.lineTo(500, 280);
-
-ctx.lineTo(700, 280);
-
-ctx.lineTo(600, 145);
-
-ctx.lineTo(525, 270);
-
-ctx.lineTo(675, 270);
-
-ctx.lineTo(600, 160);
-
-ctx.lineTo(550, 260);
-
-ctx.lineTo(650, 260);
-
-ctx.lineTo(600, 175);
-
-ctx.lineTo(575, 250);
-
-ctx.lineTo(625, 250);
-
-ctx.lineTo(600, 190);
-
-ctx.lineTo(590, 240);
-
-ctx.lineTo(600, 240)
-
-ctx.strokeStyle = "red";
-
-ctx.stroke();
-
+ctx.lineTo(950, 150);
+//Definição da fonte do texto.
 ctx.font = "32px Times New Roman";
-
-ctx.fillText("Linhas formando um triângulo", 400, 500);
+//Definição do conteúdo e posição do texto.
+ctx.fillText("Formas Geometricas", 480, 50)
+//Definição das cores das linhas e de seus preenchimentos.
+ctx.fillStyle = "red";
+ctx.fill();
