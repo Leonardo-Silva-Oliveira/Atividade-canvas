@@ -1,4 +1,5 @@
 Atividade-canvas
+
 Leonardo Silva Oliveira 2° Jogos Digitais
 
 Utilização dos códigos passados em aula sobre o canvas em javascript.
